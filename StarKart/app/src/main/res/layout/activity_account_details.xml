@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".AccountDetails">
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Starkart"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/nametag"
+        android:textSize="30dp"
+        android:id="@+id/logo"
+        android:textStyle="bold"
+        ></TextView>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="My Orders"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/nametag"
+        android:id="@+id/orders"
+        android:textColor="@android:color/white"
+        android:onClick="orders"
+        ></Button>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="My Cart"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/nametag"
+        android:id="@+id/cart"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:onClick="cart"
+        ></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uname"
+        android:text="Name : "
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/orders"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:text="Mobile Number : "
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/uname"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:id="@+id/email"
+        android:text="E-Mail :  : "
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="30dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:text="Address : "
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+
+        ></TextView>
+</RelativeLayout>

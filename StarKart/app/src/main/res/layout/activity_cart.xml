@@ -1,0 +1,77 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Starkart"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/nametag"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/logo"
+        ></TextView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text=" "
+         android:layout_marginTop="20dp"
+         android:textColor="@android:color/holo_red_dark"
+         android:gravity="center"
+         android:textSize="25dp"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:id="@+id/noitem"
+         ></TextView>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/listview"
+        android:layout_weight="1"
+        ></ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total"
+        android:textSize="20dp"
+        android:text="Total :"
+        android:layout_below="@+id/listview"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        ></TextView>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Buy Now"
+        android:layout_below="@+id/total"
+        android:background="@drawable/nametag"
+        android:id="@+id/buy"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_gravity="left"
+        android:visibility="gone"
+        android:onClick="buyall"
+        ></Button>
+     <Button
+         android:layout_marginTop="-50dp"
+         android:layout_width="175dp"
+         android:layout_height="50dp"
+         android:text="Remove All"
+         android:layout_below="@+id/total"
+         android:background="@drawable/nametag"
+         android:id="@+id/remove"
+         android:textColor="@android:color/white"
+         android:textSize="25dp"
+         android:layout_gravity="right"
+         android:visibility="gone"
+         android:onClick="removeall"
+         ></Button>
+
+</LinearLayout>

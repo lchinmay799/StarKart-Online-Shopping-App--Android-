@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".thank">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:id="@+id/thank"
+    android:src="@drawable/thankyou"
+    android:scaleY="2"
+    android:layout_marginTop="20dp"
+    ></ImageView>
+
+<Button
+    android:layout_width="180dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_below="@+id/thank"
+    android:text="Buy More Products"
+    android:background="@drawable/nametag"
+    android:id="@+id/buyproducts"
+    android:textColor="@android:color/white"
+    android:onClick="buyproducts"
+    ></Button>
+
+<Button
+    android:layout_width="180dp"
+    android:layout_height="50dp"
+    android:id="@+id/customercare"
+    android:text="Customer Care"
+    android:layout_marginTop="50dp"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/thank"
+    android:background="@drawable/nametag"
+    android:textColor="@android:color/white"
+    android:onClick="customer"></Button>
+
+</RelativeLayout>

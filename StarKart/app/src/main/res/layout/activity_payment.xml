@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/cartb"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".Address">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Starkart"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/nametag"
+        android:textSize="30dp"
+        android:id="@+id/logo"
+        android:textStyle="bold"
+        ></TextView>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Enter Name on Card"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        ></EditText>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardno"
+        android:hint="Enter Card Number"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        ></EditText>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvv"
+        android:hint="Enter CVV"
+        android:layout_below="@+id/cardno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date"
+        android:layout_below="@+id/cvv"
+        android:id="@+id/expiry"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        ></TextView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expiry"
+        android:layout_marginTop="15dp"
+        android:hint="MM"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  /  "
+        android:textSize="30dp"
+        android:layout_below="@+id/expiry"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="20dp"
+        ></TextView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expiry"
+        android:layout_marginTop="15dp"
+        android:hint="YYYY"
+        android:layout_marginLeft="125dp"
+        android:textSize="20dp"
+        ></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otpbutton"
+        android:text="GET OTP"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/expiry"
+        android:layout_marginTop="65dp"
+        android:onClick="generate"
+        ></Button>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp"
+        android:layout_below="@+id/otpbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Enter OTP"
+        ></EditText>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceed"
+        android:text="Proceed"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="40dp"
+        android:onClick="thankyou"
+        ></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/warning"
+        android:text=" "
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/proceed"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+</RelativeLayout>

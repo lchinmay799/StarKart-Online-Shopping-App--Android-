@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen_background"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Starkart"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/nametag"
+        android:textSize="30dp"
+        android:id="@+id/logo"
+        android:textStyle="bold"
+        ></TextView>
+    <Button
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/nametag"
+        android:id="@+id/signup"
+        android:textColor="@android:color/white"
+        android:onClick="signup"
+        ></Button>
+    <Button
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:text="Sign In"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/nametag"
+        android:id="@+id/login"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="login"
+        ></Button>
+    <Button
+        android:layout_width="133dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:text="Customer Care"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/nametag"
+        android:id="@+id/customercare"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:onClick="customercare"
+        ></Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor = "@android:color/white"
+        android:layout_below="@+id/login"
+        android:background="@drawable/nametag"
+        android:textSize="20dp"
+        android:text = "Amazing Offers"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:id="@+id/textview"
+        android:scrollHorizontally = "true"
+        android:textStyle="bold"
+        android:gravity="center"
+        ></TextView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/marque1"
+        ></ImageView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/marque1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/marque2"
+        ></ImageView>
+</RelativeLayout>
